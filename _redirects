@@ -1,0 +1,8 @@
+# Rewrite rules for Next.js App Router
+# Redirect all requests to the Next.js server
+
+[[redirects]]
+source = "/<*>"
+target = "/index.html"
+status = 200
+condition = "{REQUEST_FILENAME} !-f"
