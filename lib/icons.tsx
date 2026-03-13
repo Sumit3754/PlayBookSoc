@@ -1,6 +1,7 @@
-import { DollarSign, FileText, BookOpen, Clock as Unlock, Shield, Users, Link, Activity, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Zap, TrendingUp, GraduationCap, Video as LucideIcon } from 'lucide-react';
+import { DollarSign, FileText, BookOpen, Clock as Unlock, Shield, Users, Link, Activity, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle, Zap, TrendingUp, GraduationCap, Video } from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
-export const iconMap: Record<string, LucideIcon> = {
+export const iconMap: Record<string, any> = {
   DollarSign,
   FileText,
   BookOpen,
@@ -16,6 +17,6 @@ export const iconMap: Record<string, LucideIcon> = {
   GraduationCap,
 };
 
-export function getIcon(iconName: string): LucideIcon {
+export function getIcon(iconName: string): any {
   return iconMap[iconName] || Shield;
 }
