@@ -3,13 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - npm ci
     build:
       commands:
         - npm run build
-    postBuild:
-      commands:
-        - mkdir -p out/.next && echo '{}' > out/.next/required-server-files.json
   artifacts:
     baseDirectory: out
     files:
